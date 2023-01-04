@@ -1,2 +1,2 @@
-# mae-131a-demos
-Computational lecture demos for MAE 131A at UC San Diego
+# Lecture demos for MAE 131A
+This repository contains several MATLAB/[Octave](https://www.gnu.org/software/octave/index) scripts to demonstrate solutions of some problems from the course.  Programming will not be required for assignments, but tracing the execution of these scripts for small problems will hopefully help some students improve their understanding of problem-solving methods and how symoblic derivations connect to numerical results.
