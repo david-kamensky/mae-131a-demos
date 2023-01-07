@@ -19,7 +19,7 @@ elements = [1,2;2,3;1,5;2,5;1,4;4,5;5,3];
 
 % Each row gives nonzero or 0 for each component of displacement at a node,
 % where a nonzero indicates that the corresponding component is fixed.  
-% Note that there must be exactly three ones for the truss to be 
+% Note that there must be exactly three nonzero entries for the truss to be 
 % determinate, and the nonzero values entered for these should be 1, 2,
 % and 3, which will be used as indices for the three unknown reaction
 % forces associated with these constraints.
