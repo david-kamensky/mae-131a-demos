@@ -1,0 +1,2 @@
+# Examples of solving indeterminate beams
+These scripts can be used to plug numbers into some of the parameterized beam deflection solutions developed in lecture. They may also be helpful if the interpretation of symbolic formulas involving Heaviside functions is unclear; the Heaviside function is implemented in these scripts as an anonymous MATLAB function `H`.

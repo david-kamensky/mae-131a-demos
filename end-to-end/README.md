@@ -1,0 +1,2 @@
+# Lecture demos on end-to-end axial deformation assemblages
+These scripts demonstrate some different solution methods for both determinate and indeterminate end-to-end assemblages of uniform axial deformation elements.  The script `end2end_continuous.m` also shows how many short uniform axial deformation elements can be used to approximate nonuniform axial deformation with varying cross-sectional area and material properties. (This is a special case of the "finite element method" used to approximate general solid mechanics problems.)
