@@ -40,6 +40,13 @@ N_el = size(elements,1);
 % Total degrees of freedom (element forces and reaction forces):
 N_dof = N_el + 3;
 
+% Check whether the number of equations (two for each node) matches
+% the number of degrees of freedom:
+if(N_dof ~= 2*N_node)
+    fprintf("ERROR: Attempting to solve indeterminate truss.\n");
+    return;
+end
+
 % Set up matrix and vector for the system of equations, where
 % each row corresponds to equilibrium of a given node in a Cartesian
 % direction, with ordering
