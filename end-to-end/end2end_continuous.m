@@ -28,11 +28,11 @@ x = linspace(0,L_tot,N_node);
 N_el = N_node - 1;
 % Array of element lengths:
 L = x(2:N_node) - x(1:N_el);
-% Array of cross-sectional areas at nodes:
+% Array of element midpoints:
+x_mid = 0.5*(x(1:N_el) + x(2:N_node));
+% Array of cross-sectional areas at midpoints:
 R_func = @(x) R_0 - ((R_0-R_L)/L_tot)*x;
-A_nodal = pi*R_func(x).^2;
-% Cross-sectional area for each element:
-A = 0.5*(A_nodal(1:N_el) + A_nodal(2:N_node));
+A = pi*R_func(x_mid).^2;
 % Array of stiffnesses of elements:
 k = E.*A./L;
 
